@@ -1,81 +1,70 @@
 package _01_AnimalFarm;
 
- abstract class Animal{
-	/*protected Animal a;
-	public Animal(Animal a) {
-		this.a=a;
-	}
-	public Animal toAnimal() {
-		return a;
-	}*/
-	 abstract Animal makeNoise(Animal a) ;
-	 abstract Animal annoyFarmer(Animal a);
+abstract class Animal {
+	
+	abstract String makeNoise();
+
+	abstract String annoyFarmer();
 }
-class Chicken extends Animal{
-	/*public Chicken(Animal a) {
-		super(a);
-		// TODO Auto-generated constructor stub
-	}*/
+
+class Chicken extends Animal {
+	
 	@Override
-	Animal makeNoise(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
+	String makeNoise() {
+		
+		return "bawk";
 	}
 
 	@Override
-	Animal annoyFarmer(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
+	String annoyFarmer() {
+		
+		return "stupid chicken";
 	}
 }
-class Cow extends Animal{
-	/*public Cow(Animal a) {
-		super(a);
-	}*/
+
+class Cow extends Animal {
+	
 
 	@Override
-	Animal makeNoise(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
+	String makeNoise() {
+		
+		return "moo";
 	}
 
 	@Override
-	Animal annoyFarmer(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-}
-class Pig extends Animal{
-	/*public Pig(Animal a) {
-		super(a);
-	}*/
-
-	@Override
-	Animal makeNoise(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	Animal annoyFarmer(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
+	String annoyFarmer() {
+		
+		return "Too much methane in the atmosphere";
 	}
 }
-class Geese extends Animal{
-	/*public Geese(Animal a) {
-		super(a);
-	}*/
+
+class Pig extends Animal {
+	
 
 	@Override
-	Animal makeNoise(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
+	String makeNoise() {
+		
+		return "oink";
 	}
 
 	@Override
-	Animal annoyFarmer(Animal a) {
-		// TODO Auto-generated method stub
-		return null;
+	String annoyFarmer() {
+		
+		return "phat";
+	}
+}
+
+class Geese extends Animal {
+	
+	@Override
+	String makeNoise() {
+		
+		return "honk";
+	}
+
+	@Override
+	String annoyFarmer() {
+		
+		return "this is clearly a turkey";
 	}
 }
